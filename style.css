@@ -1,0 +1,179 @@
+html {
+    min-height: 100%;
+    background-size: cover;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    color: snow;
+    font-family: 'PT Serif', serif;
+    font-size: large;
+    text-align: center;
+}
+
+a {
+    color: snow;
+}
+
+h2 {
+    color: snow;
+}
+
+input {
+    padding: 6px;
+}
+
+form.default_form {
+    width: 310px;
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 4px;
+    padding: 6px;
+    background: gray;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+form.short_form {
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 4px;
+    padding: 6px;
+    background: gray;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+form.long_form {
+    width: 360px;
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 4px;
+    padding: 6px;
+    background: gray;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+table.default_table {
+    width: auto;
+    margin: 0 auto;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 4px;
+    padding: 6px;
+}
+
+table.sort_bar {
+    width: auto;
+    margin: 0 auto;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 4px;
+    padding: 6px;
+    background: gray;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+table.show_table {
+    width: auto;
+    margin: 0 auto;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 4px;
+    padding: 6px;
+}
+
+table.show_table > thead > tr {
+    color: snow;
+    text-align: center;
+    font-weight: bold;
+    padding: 6px;
+}
+
+table.show_table > thead > tr > td {
+    border-radius: 4px 4px 0 0;
+    text-align: center;
+    background: black;
+    padding: 6px;
+}
+
+table.show_table > tbody > tr > td {
+    border: 1px solid black;
+    border-radius: 4px;
+    background: gray;
+    padding: 6px;
+}
+
+
+/* Ниже настройка выпадающего меню */
+
+nav {
+    width: 96%;
+    margin: 0 auto;
+    padding: 10px;
+    height: 65px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    line-height: 100%;
+    background: black;
+    position: relative;
+}
+
+ul {
+    background: black;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    width: 200px;
+    color: snow;
+    background: black;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+}
+
+li a {
+    color: snow;
+    text-decoration: none;
+}
+
+li:hover {
+    width: 200px;
+    background: #eb8d00;
+    cursor: pointer;
+}
+
+ul li ul {
+    width: 200px;
+    background: black;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+    width: 200px;
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
